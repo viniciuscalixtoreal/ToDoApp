@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToDoApp.Application\ToDoApp.Application.csproj" />
+    <ProjectReference Include="..\ToDoApp.CrossCutting\ToDoApp.CrossCutting.csproj" />
+    <ProjectReference Include="..\ToDoApp.Infrastructure\ToDoApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
